@@ -11,7 +11,6 @@ import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.codepath.flixster.adapters.MovieAdapter;
 import com.codepath.flixster.models.Movie;
-import com.facebook.stetho.common.ArrayListAccumulator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        RecyclerView rvMovies=findViewById((R.id.rvMovies));
+        RecyclerView rvMovies=findViewById((R.id.container));
         movies=new ArrayList<>();
         // Create the adapter
         MovieAdapter movieAdapter = new MovieAdapter(this, movies);
